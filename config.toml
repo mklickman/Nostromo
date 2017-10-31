@@ -1,0 +1,29 @@
+# For more information on config files, go here:
+# http://gohugo.io/getting-started/configuration/#toml-configuration
+
+baseURL = "http://nostromo-theme.surge.sh"
+languageCode = "en-us"
+title = "USCSS Nostromo"
+theme = "nostromo"
+uglyURLs = true
+sectionPagesMenu = "main"
+
+[menus]
+    [[menu.main]]
+    identifier = "home"
+    name = "Home"
+    url = "/"
+    weight = "1"
+
+    [[menu.main]]
+    identifier = "about"
+    name = "About"
+    url = "/about.html"
+    weight = "2"
+
+    [[menu.main]]
+    identifier = "sub-page"
+    name = "Example Subpage"
+    url = "/about/example-subpage.html"
+    parent = "about"
+    weight = "2"
